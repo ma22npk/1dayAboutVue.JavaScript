@@ -31,3 +31,16 @@ new Vue({
         }
     }
 });
+var value = '文字'; //変数valueに文字列を代入
+var num = 1000; //変数numに数値を代入
+
+const func = sunction() {
+    //処理
+};
+func(); //処理の実行
+
+const hello = 'hello'; //定数なので再代入不可能
+hello = 'こんにちわ'; //エラーになる。
+
+let goodMorning = 'Good morning'; //変数なので再代入荷脳
+goodMorning = 'おはよう'; //問題なし
