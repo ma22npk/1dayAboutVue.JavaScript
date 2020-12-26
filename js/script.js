@@ -1,3 +1,4 @@
+Vue.config.devtools = true;
 // const app = new Vue({
 //     el: '#app',
 //     data: {
@@ -46,11 +47,28 @@
 // goodMorning = 'おはよう'; //問題なし
 
 //Vueクラスのインスタンス化
+// const app = new Vue({
+//     el: '#app',
+//     data() { //前行にカンマ「,」を追加し、データ関数を定義する
+//         return { //オブジェクトをreturnで返却する
+//             text: 'hello Vue.js' //textプロパティに文字列を設定
+//         };
+//     }
+// });
+// const data = {
+//     text: "hello"
+// };
+// const $el = document.querySelector("#text"); //HTMLの取得
+// data.text = "hello world"; //データの変更
+// $el.innerText = data.text; //HTMLへの反映
+
 const app = new Vue({
     el: '#app',
-    data() { //前行にカンマ「,」を追加し、データ関数を定義する
-        return { //オブジェクトをreturnで返却する
-            text: 'hello Vue.js' //textプロパティに文字列を設定
+    data() {
+        return {
+            text: 'hello world'
         };
     }
 });
+
+app.text = 'hello Vue.js'; //データの変更

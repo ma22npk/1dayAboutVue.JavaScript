@@ -1,0 +1,84 @@
+.fizz-buzz-app {
+  /*# sourceMappingURL=style.css.map */
+}
+
+.fizz-buzz-app p {
+  font-size: 40px;
+  text-align: center;
+}
+
+.fizz-buzz-app .btn-inner {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.fizz-buzz-app .btn {
+  font-size: 24px;
+  display: inline-block;
+  padding: .6em 2em;
+  margin: 0 0 1em;
+  background-image: none;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  position: relative;
+}
+
+.fizz-buzz-app .btn:hover .btn:focus {
+  outline: none;
+}
+
+.fizz-buzz-app .btn::-moz-foucus-inner {
+  padding: 0;
+  border: none;
+}
+
+.fizz-buzz-app .arrow_box {
+  width: 250px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #000000;
+}
+
+.fizz-buzz-app .arrow_box:after,
+.fizz-buzz-app .arrow_box:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.fizz-buzz-app .arrow_box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #fff;
+  border-width: 30px;
+  margin-top: -30px;
+}
+
+.fizz-buzz-app .arrow_box:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-left-color: #000000;
+  border-width: 31px;
+  margin-top: -31px;
+}
+
+.fizz-buzz-app .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+}
+
+.fizz-buzz-app .wrapper .face {
+  font-size: 150px;
+}
+/*# sourceMappingURL=style.css.map */
