@@ -12,9 +12,17 @@
         <link href="CSS/style.css" rel="stylesheet">
         <title>validation機能付き入力フォーム</title>
     </head>
-    <div id="app">
+    <!-- <div id="app">
         <p v-if="age >= 20">成人です。</p>
         <p v-else>未成年です</p>
+      </div> -->
+      <!-- <div id="app">
+        <p v-if="check_age">成人です。</p>
+        <p v-else>未成年です</p>
+      </div> -->
+      <div id="app">
+          <!-- v-showの記述 -->
+        <p v-show="check_age">成人です。</p>
       </div>
     <body>
         <!-- 開発バージョン、便利なコンソールの警告が含まれています -->
