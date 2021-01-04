@@ -65,7 +65,7 @@
 }
 
 .fizz-buzz-app .arrow_box:before {
-  border-color: rgba(0, 0, 0, 0);
+  border-color: transparent;
   border-left-color: #000000;
   border-width: 31px;
   margin-top: -31px;
@@ -81,4 +81,3 @@
 .fizz-buzz-app .wrapper .face {
   font-size: 150px;
 }
-/*# sourceMappingURL=style.css.map */
