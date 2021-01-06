@@ -14,7 +14,7 @@
     </head>
     <body>
 <div id="app">
-  <div class="form-area__name">
+  <!-- <div class="form-area__name">
     <p>名前</p>
     <input type="text" name="name" v-model="name"/>
     <p v-if="isInValidName" class="error">名前は4文字以上で入力してください</p>
@@ -28,7 +28,9 @@
     <p>メールアドレス</p>
     <input type="tel" name="tel" v-model="tel">
     <p v-if="isInValidTel" class="error">電話番号は8桁で入力してください。</p>
-  </div>
+  </div> -->
+  <input type="text" @input="setText" :value="text">
+  <p>入力された文字は：{{text}}</p>
 </div>
         <!-- 開発バージョン、便利なコンソールの警告が含まれています -->
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>

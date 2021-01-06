@@ -19,23 +19,29 @@ new Vue({
   el: '#app',
   data(){
     return {
-      name: 'name',
-      email: 'email@email.com',
-      tel:'12345678'
+      // name: 'name',
+      // email: 'email@email.com',
+      // tel:'12345678',
+      text:"aaaaaa"
     };
   },
-  computed:{
-    isInValidName(){
-      return this.name.length < 4;
-    },
-    isInValidEmail(){
-      const reg = new RegExp(/^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/);
-      return !reg.test(this.email);
-    },
-    isInValidTel(){
-      const tel = this.tel;
-      const isErr = tel.length < 8 || isNaN(Number(tel));
-      return isErr;
+  // computed:{
+    // isInValidName(){
+    //   return this.name.length < 4;
+    // },
+    // isInValidEmail(){
+    //   const reg = new RegExp(/^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}\.[A-Za-z0-9]{1,}$/);
+    //   return !reg.test(this.email);
+    // },
+    // isInValidTel(){
+    //   const tel = this.tel;
+    //   const isErr = tel.length < 8 || isNaN(Number(tel));
+    //   return isErr;
+    // },
+    methods: {
+      setText(e) {
+        this.text = e.target.value;
+      }
     }
-  }
+  // }
 });
