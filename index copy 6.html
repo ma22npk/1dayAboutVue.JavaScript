@@ -10,13 +10,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Style CSS -->
         <link href="CSS/style.css" rel="stylesheet">
-        <title>第一章</title>
+        <title>キー修飾子の練習</title>
     </head>
 
     <body>
+        <div id="app">
+            <!-- 以下にEnterのキー修飾子を含むコードを記述してください -->
+            Enter <input @keydown.enter="onEnter"><br>
+            Tab <input @keydown.tab="onTab"><br>
+            Delete <input @keydown.delete="onDelete"><br>
+            Esc <input @keydown.esc="onEsc"><br>
+            Space <input @keydown.space="onSpace"><br>
+            Up <input @keydown.up="onUp"><br>
+            Down <input @keydown.down="onDown"><br>
+            Left <input @keydown.left="onLeft"><br>
+            Right <input @keydown.right="onRight"><br>
+          </div>
+
         <!-- 開発バージョン、便利なコンソールの警告が含まれています -->
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <script src="js/part1.js"></script>
+        <script src="js/part6.js"></script>
     </body>
 
 </html>
